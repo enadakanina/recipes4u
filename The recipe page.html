@@ -1,0 +1,374 @@
+<!DOCTYPE.html>
+<html>
+<head>
+	<title>The Recipe page</title>
+	<style>
+		body {
+			margin-left: 16.86%;
+			margin-right: 16.86%;
+		}
+		.titulli {
+			color: #90bd96;
+			text-shadow:
+				-1px -1px 0 #000,
+				1px -1px 0 #000,
+				-1px 1px 0 #000,
+				1px 1px 0 #000; 
+		}
+		* {box-sizing: border-box;}
+		.container {
+			position: relative;
+			width: 100%;
+			max-width: 300px;
+		}
+		.image {
+			display: block;
+			margin-top: 20px;
+		}
+		.overlay {
+			position: absolute; 
+			bottom: 0; 
+			background: rgb(0, 0, 0);
+			background: rgba(0, 0, 0, 0.5); 
+			color: #f1f1f1; 
+			width: 100%;
+			transition: .5s ease;
+			opacity:0;
+			color: white;
+			font-size: 20px;
+			font-family: Corbel Light;
+			padding: 20px;
+			text-align: center;
+		}
+
+		.container:hover .overlay {
+			opacity: 1;
+		}
+		.teksti {
+			font-family: Corbel;
+			color: #585858;
+			font-size: 20pt;
+			padding-left: 7px;
+			border-left-style: solid;
+			border-left-color: #90bd96;
+			border-left-width: 5px;
+		}
+		.row {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+		.column {
+			flex: 25%;
+			max-width: 25%;
+			padding: 0 4px;
+		}
+
+		.column img {
+			margin-top: 8px;
+			vertical-align: middle;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 800px) {
+			.column {
+				flex: 50%;
+				max-width: 50%;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			.column {
+				flex: 100%;
+				max-width: 100%;
+			}
+		}
+		.fundi {
+			font-family: Courier New;
+			font-size: 16pt;
+			background-color: #90bd96;
+			position: absolute;
+			top: 1630px;
+			color: white;
+			width: 66.28%;
+			text-align: center;
+			
+		}
+		.button {
+			text-align: center;
+			border-type: solid;
+			border-color: green;
+			color: white;
+			background-color: #90bd96;
+			font-family: Corbel light;
+			width: 200px;
+			height: 60px;
+			font-size: 30px;
+		}
+			
+	</style>
+	<script>
+		function snack() {
+			var a = document.getElementById("meal").style.display = "none";
+			var aa = document.getElementById("snack").style.display = "block";
+			var aaa = document.getElementById("salad").style.display = "none";
+			var aaaa= document.getElementById("dessert").style.display = "none";
+			
+			var b = document.getElementById("meal1").style.display = "none";
+			var bb = document.getElementById("snack1").style.display = "block";
+			var bbb= document.getElementById("salad1").style.display = "none";
+			var bbbb = document.getElementById("dessert1").style.display = "none";
+			
+			var c = document.getElementById("meal2").style.display = "none";
+			var cc = document.getElementById("snack2").style.display = "block";
+			var ccc = document.getElementById("salad2").style.display = "none";
+			var cccc = document.getElementById("dessert2").style.display = "none";
+			
+			var d = document.getElementById("meal3").style.display = "none";
+			var dd = document.getElementById("snack3").style.display = "block";
+			var ddd = document.getElementById("salad3").style.display = "none";
+			var dddd = document.getElementById("dessert3").style.display = "none";
+		}
+		function meal() {
+			var h1 = document.getElementById("meal").style.display = "block";
+			var hh1 = document.getElementById("snack").style.display = "none";
+			var hhh1 = document.getElementById("salad").style.display = "none";
+			var hhhh1= document.getElementById("dessert").style.display = "none";
+			
+			var g1 = document.getElementById("meal1").style.display = "block";
+			var gg1 = document.getElementById("snack1").style.display = "none";
+			var ggg1= document.getElementById("salad1").style.display = "none";
+			var gggg1 = document.getElementById("dessert1").style.display = "none";
+			
+			var f1 = document.getElementById("meal2").style.display = "block";
+			var ff1 = document.getElementById("snack2").style.display = "none";
+			var fff1 = document.getElementById("salad2").style.display = "none";
+			var ffff1 = document.getElementById("dessert2").style.display = "none";
+			
+			var e1 = document.getElementById("meal3").style.display = "block";
+			var ee1 = document.getElementById("snack3").style.display = "none";
+			var eee1 = document.getElementById("salad3").style.display = "none";
+			var eeee1 = document.getElementById("dessert3").style.display = "none";
+		}
+		function salad() {
+			var h12 = document.getElementById("meal").style.display = "none";
+			var hh12 = document.getElementById("snack").style.display = "none";
+			var hhh12 = document.getElementById("salad").style.display = "block";
+			var hhhh12= document.getElementById("dessert").style.display = "none";
+			
+			var g12 = document.getElementById("meal1").style.display = "none";
+			var gg12 = document.getElementById("snack1").style.display = "none";
+			var ggg12= document.getElementById("salad1").style.display = "block";
+			var gggg12 = document.getElementById("dessert1").style.display = "none";
+			
+			var f12 = document.getElementById("meal2").style.display = "none";
+			var ff12 = document.getElementById("snack2").style.display = "none";
+			var fff12 = document.getElementById("salad2").style.display = "block";
+			var ffff12 = document.getElementById("dessert2").style.display = "none";
+			
+			var e12 = document.getElementById("meal3").style.display = "none";
+			var ee12 = document.getElementById("snack3").style.display = "none";
+			var eee12 = document.getElementById("salad3").style.display = "block";
+			var eeee12 = document.getElementById("dessert3").style.display = "none";
+		}
+		function allll() {
+			var h = document.getElementById("meal").style.display = "block";
+			var hh = document.getElementById("snack").style.display = "block";
+			var hhh = document.getElementById("salad").style.display = "block";
+			var hhhh= document.getElementById("dessert").style.display = "block";
+			
+			var g = document.getElementById("meal1").style.display = "block";
+			var gg = document.getElementById("snack1").style.display = "block";
+			var ggg= document.getElementById("salad1").style.display = "block";
+			var gggg = document.getElementById("dessert1").style.display = "block";
+			
+			var f = document.getElementById("meal2").style.display = "block";
+			var ff = document.getElementById("snack2").style.display = "block";
+			var fff = document.getElementById("salad2").style.display = "block";
+			var ffff = document.getElementById("dessert2").style.display = "block";
+			
+			var e = document.getElementById("meal3").style.display = "block";
+			var ee = document.getElementById("snack3").style.display = "block";
+			var eee = document.getElementById("salad3").style.display = "block";
+			var eeee = document.getElementById("dessert3").style.display = "block";
+		}
+		function dessert() {
+			var h3 = document.getElementById("meal").style.display = "none";
+			var hh3 = document.getElementById("snack").style.display = "none";
+			var hhh3 = document.getElementById("salad").style.display = "none";
+			var hhhh3= document.getElementById("dessert").style.display = "block";
+			
+			var g3 = document.getElementById("meal1").style.display = "none";
+			var gg3 = document.getElementById("snack1").style.display = "none";
+			var ggg3= document.getElementById("salad1").style.display = "none";
+			var gggg3 = document.getElementById("dessert1").style.display = "block";
+			
+			var f3 = document.getElementById("meal2").style.display = "none";
+			var ff3 = document.getElementById("snack2").style.display = "none";
+			var fff3 = document.getElementById("salad2").style.display = "none";
+			var ffff3 = document.getElementById("dessert2").style.display = "block";
+			
+			var e3 = document.getElementById("meal3").style.display = "none";
+			var ee3 = document.getElementById("snack3").style.display = "none";
+			var eee3 = document.getElementById("salad3").style.display = "none";
+			var eeee3 = document.getElementById("dessert3").style.display = "block";
+		}
+	</script>
+</head>
+<body>
+	<div style="line-height: 0.5; margin-left: 5px; margin-bottom: 20px;">
+		<h1 style="font-family: Courier New; margin-top: 35px; font-size: 55; margin-bottom: -6px;" class="titulli">The recipe list</h1>
+		<p style="color: #90bd96">____________________________________________________________________________________________________________________________________________________________</p>
+		<p style="font-family: Corbel Light; font-size: 20pt;">Filter the recipes for an easier decision:</p>
+	</div>	
+	<div>
+		<input type="button" value="Show all" style="background-color: #90bd96; color: white; font-family: Courier New; border: 2px solid green; float: left; margin-left:5px; margin-right: 5px;" onclick="allll();"/>
+		<input type="button" value="Snack" style="background-color: #90bd96; color: white; font-family: Courier New; border: 2px solid green; float: left; margin-right: 5px;" onclick="snack();"/>
+		<input type="button" value="Salad" style="background-color: #90bd96; color: white; font-family: Courier New; border: 2px solid green; float: left; margin-right: 5px;" onclick="salad();"/>
+		<input type="button" value="Meal" style="background-color: #90bd96; color: white; font-family: Courier New; border: 2px solid green; float: left; margin-right: 5px;" onclick="meal();"/>
+		<input type="button" value="Dessert" style="background-color: #90bd96; color: white; font-family: Courier New; border: 2px solid green; margin-right: 5px;" onclick="dessert();"/>	
+	</div>
+	<p></p>
+	<p></p>
+	<div class="row" >
+		<div class="column" id="all">
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 7px;" id="snack">
+				<a href="Avocado-Cucumber Roll-Ups.html"><img src="https://i.pinimg.com/564x/68/37/d3/6837d37878cd3e6a509811cb6c7d9dde.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Avocado-Cucumber Roll-Ups</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="salad">
+				<a href="Quinoa Salad.html"><img src="https://www.twopeasandtheirpod.com/wp-content/uploads/2017/09/Easy-Quinoa-Salad-2-500x375.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Quinoa Salad</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="meal">
+				<a href="Sauce and Potatoes.html"><img src="https://www.halfbakedharvest.com/wp-content/uploads/2022/03/Crispy-Oregano-Roasted-Potatoes-with-Creamy-Feta-Sauce-4.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Sauce and Potatoes</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="dessert">
+				<a href="Raspberry Cake.html"><img src="https://assets-eu-01.kc-usercontent.com/559bb7d3-88a4-01c1-79a3-dd4d5b2d2bb0/8e846b3a-7973-4604-9913-f2edd322c701/Chocolate-Raspberry-Cake-SQUARE-2.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Raspberry Cake</div>
+			</div>
+		</div>	
+		<div class="column" id="all1">
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 7px;" id="snack1">
+				<a href="Texas Toast.html"><img src="https://www.homemadeinterest.com/wp-content/uploads/2021/09/Texas-Toast_IG-1.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Texas Toast</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="meal1">
+				<a href="Alfredo Pasta.html"><img src="https://assets.epicurious.com/photos/573cd0352931ccb32b4540bc/1:1/w_2560%2Cc_limit/shutterstock_372579805.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Alfredo Pasta</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="salad1">
+				<a href="Caesar Salad.html"><img src="https://natashaskitchen.com/wp-content/uploads/2019/01/Caesar-Salad-Recipe-3.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Caesar Salad</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="dessert1">
+				<a href="Strawberry Cheesecake Chimichanga.html">
+				<img src="https://www.californiastrawberries.com/wp-content/uploads/2021/04/strawberry-chimichangas-.png" 
+				 class="image">
+				</a>
+				<div class="overlay">Strawberry Cheesecake Chimichanga</div>
+			</div>
+		</div>
+		<div class="column" id="all2">
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 7px;" id="snack2">
+				<a href="Coconut Bites.html"><img src="https://kitchenfunwithmy3sons.com/wp-content/uploads/2019/12/chocolate-coconut-balls-3.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Coconut Bites</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="dessert2">
+				<a href="Jam Cookies.html"><img src="https://www.thespruceeats.com/thmb/HYioOEQhaWQYV1hkyW9cr1rMd94=/3600x3600/smart/filters:no_upscale()/bulgarian-christmas-jam-filled-cookie-recipe-1135752-hero-01-3cc311e032114da691a0d850d250b6c6.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Jam Cookies</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="meal2">
+				<a href="Taco.html"><img src="https://feelgoodfoodie.net/wp-content/uploads/2017/04/Ground-Beef-Tacos-9.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Chicken Tacos</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="salad2">
+				<a href="Easter Salad.html"><img src="https://onepotrecipes.com/wp-content/uploads/2022/02/Easter-Salad-or-Spring-Salad-500x500.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Easter Salad</div>
+			</div>
+		</div>
+		<div class="column" id="all3">
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 7px;" id="salad3">
+				<a href="Fruit.html"><img src="https://www.wellplated.com/wp-content/uploads/2021/05/Delicious-Fruit-Salad.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Fruit Salad</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="dessert3">
+				<a href="Mochi.html"><img src="https://allpurposeveggies.com/wp-content/uploads/2021/04/IMG_7351.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Ice Cream Mochi</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="meal3">
+				<a href="Byrek.html"><img src="https://thegreenquest.org/wp-content/uploads/2020/02/Borek-Potato-3-of-5-500x500.jpg" 
+				 class="image">
+				</a>
+				<div class="overlay">Spinach Borek</div>
+			</div>
+			<div class="container" style="float:left; margin-right: 15px; margin-top: 10px;" id="snack3">
+				<a href="Egg.html"><img src="https://i.pinimg.com/736x/45/95/1d/45951d10eaea179b94610248ae699f1f.jpg" 
+				 class="image" style="height: 300px;">
+				</a>
+				<div class="overlay">Egg-Wich</div>
+			</div>
+		</div>
+	</div>	
+	<div class="fundi">
+		<p>Go back to the <a href="index.html" style="color: white">Home Page</a></p>
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
